@@ -3,10 +3,6 @@
     <img alt="Logo der Universität zu Köln" src="_assets/img/uni-koeln-logo.png" width="150" />
   </p>
   Capstone Project on Information Systems </br>
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) </br>
-  [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-  [![forthebadge](https://forthebadge.com/images/badges/powered-by-responsibility.svg)](https://forthebadge.com)
-  [![forthebadge](https://forthebadge.com/images/badges/does-not-contain-treenuts.svg)](https://forthebadge.com)
 </h1>
 
 ## Inhalte
