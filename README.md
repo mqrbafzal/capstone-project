@@ -8,8 +8,8 @@
 ## Inhalte
 
 - [Basis Software & Tools](basics-tools/README.md)
-- [Front-End Technologien](front-end/README.md)
-- [Back-End Technologien](back-end/README.md)
+- [Front-End Technologien](frontend/README.md)
+- [Back-End Technologien](backend/README.md)
 - [Datenzugriff & -verwaltung](data-management/README.md)
 - [Deployment & Hosting](deployment-hosting/README.md)
 
@@ -19,7 +19,7 @@ Um Inhalte zu diesem Repository hinzuzufügen, benötigt Ihr zunächst einen [Gi
 
 Änderungen können auf zwei Wegen eingepflegt werden: (1) direkt über die GitHub Seite des Repositories oder (2) durch Forken und spätere Erstellung eines Pull Requests.
 
-## Änderungen per GitHub Seite
+### Änderungen per GitHub Seite
 
 1. Auswahl der jeweiligen `README.md` des Themas
 2. Klicken auf das "Edit / Bearbeiten" Icon
@@ -29,7 +29,7 @@ Um Inhalte zu diesem Repository hinzuzufügen, benötigt Ihr zunächst einen [Gi
 6. Überprüfung der Änderungen
 7. Erstellen des "Pull Request"
 
-## Änderungen per Fork / Pull Request
+### Änderungen per Fork / Pull Request
 
 1. "Fork" des Repositories
 2. Download / Clone des Forks
