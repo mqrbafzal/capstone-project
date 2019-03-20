@@ -60,7 +60,7 @@ Einsatzbereiche:
 - Datenverarbeitung (Big Data verarbeiten und als Service anbieten)
 - "Container" als ein Service (Anwendungen mit Inhalten und Infrastruktur erstellen und vertreiben)
 ### Kubernetis
-
+//TODO
 
 ## Anbieter
 Generell kann man bei den Anbietern, anhand der Abrechnungsmodelle, in zwei Kategorien unterteilen.
@@ -135,7 +135,7 @@ Grundsätzlich wird die Zusammenarbeit zwischen unterschiedlichen Modulen der So
 Beispiel: stellen wir uns wieder das Auto vor.
 Mögliche Integration Tests im Bezug zum Reifen wären:
 - Fällt der Reifen ab wenn ich mit 100 durch die Kurve fahre?
-- Wenn ich um 15 Grad einlenke kommt der Reifen nicht gegen die Achse.
+- Wenn ich bei 50 km/h um 15 Grad nach links einlenke kommt der Reifen dann gegen die Achse?
 
 
 ### Kontinuierliches Deployment
