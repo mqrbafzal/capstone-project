@@ -17,6 +17,7 @@ Aus der Sicht des Hardware-Systems sind vServer meistens nur reine Dateiverzeich
 
 Warum vServer?
 Webseiten-Betreiber brauchen Flexibilität und umfangreiche Rechte. Da ist ein eigenes Serversystem nur für den eigenen Bedarf genau das Richtige. Vor wenigen Jahren noch konnte man dies nur mit der Anmietung eines Hardware-Systems realisieren. Virtuelle Server sind dafür die billigere Variante.
+Ein vServer empfiehlt sich dann, wenn Kunden mit Ihrem Webspace bei Webhosting-Anbietern nicht mehr auskommen oder die Anzahl an Usern ihrer Website zu groß wird und entsprechend mehr Ressourcen benötigt. Des Weiteren kann man vServer auch als ersten Einstieg für eine größere Zahl von Websites oder als kleinen Mailserver nutzen.
 
 Virtualisierungstechniken: Im Wesentlichen gibt es drei Methoden, welche von den Virtualsierungsapplikationen genutzt werden.
   - Xen: ist ein Hypervisor, also eine Software, die den Betrieb mehrerer virtueller Maschinen auf einem physischen Computer erlaubt.
@@ -27,17 +28,18 @@ Virtualisierungstechniken: Im Wesentlichen gibt es drei Methoden, welche von den
 
 
 
-#### Dedicated/Rootserver
+#### Dedicated- und Root-Server: Root-Server und Dedicated-Server sind bis auf die Hardware das selbe
+Dedicated Server: 
+Der Begriff Dedicated Server bezeichnet einen Server, der mit seiner gesamten Performance ausschließlich einem einzigen Kunden bzw. Websitebetreiber oder einer bestimmten Aufgabe bzw. einem Service zur Verfügung steht.
 
+Root-Server:
+Ein Root-Server ist ein Server, der eine grundlegende Funktion bei der Übersetzung eines Domain-Namens in eine IP-Adresse einnimmt. Er beantwortet Client-Anfragen (Requests) in der Root-Zone des Domain Name Systems.
 
+Vergleich zu vServer:
+Der Dedicated Server ist im Gegensatz zum vServer ein physikalischer Computer mitsamt fester IP-Adresse, der seine ganze Rechenleistung, seinen Arbeitsspeicher und die Leitungsanbindung auf nur einen Kunden oder eine Aufgabe konzentrieren kann. Der Root Server empfiehlt sich dann, wenn man viel mehr Ressourcen benötigt als ein vServer bieten kann und auf schnelle Datenzugriffe angewiesen ist. Gerade bei großen Communities oder eine Website mit vielen Datenzugriffen empfiehlt sich der Wechsel vom vServer zum Root Server. Durch die dedizierten Festplatten bei den Root Server kann der schnellere Datenzugriff im Vergleich zum vServer gewährleistet werden.
 ## Server Software
 
-### Betriebssysteme
-Betriebssysteme bieten die Grundlage eines jeden Computers/Servers.
-Im Hosting Bereich werden hauptsächlich kostenlose Linuxbasierende Systeme, wie Debian, Ubuntu, CentOS eingesetzt.
-Für Hosting von Microsoft Produkten (Exchange,SharePoint,...) können fast ausschließlich Server mit dem Betriebsystem Microsoft Server eingesetzt werden.
-Dafür werden einmalige oder jährliche Linzenzgebühren fällig.
-
+### Betriebsysteme
 
 ### Docker
 Definition: Docker ist eine Softwareplattform zur Erstellung, zum Testen und zur Bereitstellung von Anwendungen. Hierbei verpackt Docker Software in standardisierte Einheiten, die als Container bezeichnet werden und alles enthalten, was zum Ausführen der Software erforderlich ist (Bibliotheken, Systemtools, Code und Laufzeit.)
@@ -105,19 +107,14 @@ Eine Preisreduktion bei geringer Nutzung gibt es nicht, man sollte dann einfachh
 ## Methoden
 
 ### Kontinuierliche Integration
-#### Erläuterung
+# Erläuterung
 Continuous Integration ist ein Verfahren, bei der Entwickler alle Codeänderungen regelmäßig in einem zentralen Repository zusammenführen. Diese Änderungen werden dann automatisiert erstellt und getestet. Die Hauptziele der Continuous Integration bestehen darin, Bugs schneller zu entdecken und zu beheben, die Software-Qualität zu optimieren und den Zeitraum zu minimieren, in dem neue Software-Aktualisierungen validiert und eingeführt werden.
 
-#### Funktionsweise
+# Funktionsweise
 Bei der Continuous Integration führen Entwickler regelmäßig einen Commit in einem gemeinsam genutzten Repository durch. Dafür wird ein Versionskontrollsystem wie Git verwendet. Vor jeder Durchführung eines Commit können Entwickler lokale Einheitstests für ihren Code durchführen. Sie erhalten dadurch eine zusätzliche Überprüfungsebene vor der Integration. Ein Continuous Integration-Dienst erstellt automatisch Einheitentests für neue Codeänderungen und führt diese aus, um ggf. vorhandene Fehler sofort aufzudecken.
 
-#### Vorteil
+# Vorteil
 In der Vergangenheit haben die Entwickler eines Teams meist isoliert an ihren Aufgaben gearbeitet und ihre Änderungen erst dann an der Hauptverzweigung zusammengeführt, wenn sie abgeschlossen waren. Mit CI werden Änderungen regelmäßig und zeitnah bereitgestellt.
-
-#### Building
-
-#### Testing
-
 
 ### Kontinuierliches Deployment
 
@@ -133,21 +130,13 @@ Eine Deployment Routine kann vorgegeben sein, jedoch ist diese nicht automatisie
 ### Jenkins
 
 ### Travis
-[Travis CI](https://travis-ci.com) ist eine freie und Open-Source-Software für kontinuierliche Integration und Deployment.
-Die Software eignet sich zum Testen und Erstellen von Projekten, die auf GitHub veröffentlicht werden.
-GitHub informiert Travis-CI-Projekte über Änderungen. Travis CI überprüft darauf den entsprechenden Ast und führt die Anweisungen aus der Konfigurationsdatei aus (z. B. Software aktualisieren, testen, Bericht erstellen oder E-Mail versenden).
 
-Travis gibt es seit 2013 und hat rund 700.000 Anwender, darunter IBM, Zendesk, Heroku, Twitter und Facebook.
-Als Programmiersprachen werden nahezu alle wichtigen Programmiersprachen unterstützt, darunter C, C++, C#, Clojure, D, Dart, Elixir, Erlang, F#, Go, Groovy, Haskell, Java, JavaScript, Julia, Objective-C, Perl, PHP, Python, R, Ruby, Rust, Scala, Smalltalk, Swift und Visual Basic. 
 
 ### Gitlab
 Gitlab bietet im Gegensatz zu Github eine eigene Implementierung für [Kontinuierliche Integration](README.md#Kontinuierliche-Integration) und [Kontinuierliches Deployment](README.md#Kontinuierliches-Deployment).
 Diese gliedert sich wie folgt in den Prozess eines Deployments ein:
 
-<img alt="Gitlab CI&CD" src="_assets/img/cicd_pipeline_infograph.png" width="100%" />
-
-- CI Pipeline : Hier werden [automatisierte Tests, UnitTests](README.md#testing) durchgeführt. Falls erforderlich wird vorher ein [Build der Software angefertigt](README.md#build).
-- CD Pipeline : Hier wird ein letztes Review des Codes und der Test (meistens) durch eine Person/ein Team durchgeführt und dann wird der Release der Software automatisch auf die verschiedenen Systeme deployed.
+<img alt="Gitlab CI&CD" src="_assets/img/cicd_pipeline_infograph.png" width="150" />
 
 ## Software für manuelles Deployment
 
@@ -160,7 +149,6 @@ Dabei werden nur die geänderten/hinzugefügten Bytes einer Datei neu übertrage
 ### Filezilla
 Populäres FTP Programm, welches über eine GUI dem Benutzer die Möglichkeit bietet Dateien per Drag&Drop von einem Quellverzeichnis 
 (meistens lokal) in ein Zielverzeichnis (meistens auf dem Zielserver) zu kopieren. Als Grundlegende Übertragungsmethode kann hier FTP, FTPS und SFTP (FTP via Shell) verwendet werden. 
-
 
 
 ## Autoren
