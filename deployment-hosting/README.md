@@ -8,6 +8,7 @@
 ## Grundlagen
 
 ### Rechenzentrum
+//TODO @Philipp
 
 ### Server
 Ein Server ist ein Computer, welcher meistens zusammen mit mehreren anderen Servern in einem Rechenzentrum steht.
