@@ -24,7 +24,24 @@ KVM ?
 ### Betriebsysteme
 
 ### Docker
+Definition: Docker ist eine Softwareplattform zur Erstellung, zum Testen und zur Bereitstellung von Anwendungen. Hierbei verpackt Docker Software in standardisierte Einheiten, die als Container bezeichnet werden und alles enthalten, was zum Ausführen der Software erforderlich ist (Bibliotheken, Systemtools, Code und Laufzeit.)
 
+Docker auf AWS: Das Ausführen von Docker auf AWS ermöglicht Entwicklern und Administratoren eine äußerst zuverlässige und kostengünstige Methode zum Erstellen, Versenden und Ausführen verteilter Anwendungen jeder Größe. AWS unterstützt beide Docker-Lizenzierungsmodelle: die Open-Source-basierte Docker Community Edition (CE) und die Abonnement-basierte Docker Enterprise Edition (EE).
+
+Vorteile:
+- Software kann schenller versendet werden 
+    - Docker-Benutzer versenden Software im Durchschnitt siebenmal so häufig wie Benutzer, die Docker nicht verwenden. Docker ermöglicht       es Ihnen, einzelne Services so oft wie nötig zu versenden.
+-Standardisiereung von Vorgängen
+    - Kleine Anwendungen in Containern erleichtern das Bereitstellen, das Identifizieren und das Roll-Back zum Beheben von Problemen.
+- Nahtloses Verschieben
+    - Docker-basierte Anwendungen können nahtlos von lokalen Entwicklungsmaschinen zu Produktionsbereitstellungen verschoben werden.
+- Einsparungen 
+    - Docker-Container erleichtern die Ausführung von mehr Code auf den einzelnen Servern, wodurch die Nutzungsrate verbessert wird und       somit verbundene Kosten eingespart werden können.
+Einsatzbereiche:
+- Microservices (Vorteile von standardisierten Code-Bereitstellungen mithilfe von Docker-Containern nutzen)
+- Laufende Integration und Bereitstellung (Beheben von Konflikten zwischen Sprach-Stacks und -Versionen)
+- Datenverarbeitung (Big Data verarbeiten und als Service anbieten)
+- "Container" als ein Service (Anwendungen mit Inhalten und Infrastruktur erstellen und vertreiben)
 ### Kubernetis
 
 
