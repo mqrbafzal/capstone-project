@@ -94,14 +94,19 @@ Eine Preisreduktion bei geringer Nutzung gibt es nicht, man sollte dann einfachh
 ## Methoden
 
 ### Kontinuierliche Integration
-# Erläuterung
+#### Erläuterung
 Continuous Integration ist ein Verfahren, bei der Entwickler alle Codeänderungen regelmäßig in einem zentralen Repository zusammenführen. Diese Änderungen werden dann automatisiert erstellt und getestet. Die Hauptziele der Continuous Integration bestehen darin, Bugs schneller zu entdecken und zu beheben, die Software-Qualität zu optimieren und den Zeitraum zu minimieren, in dem neue Software-Aktualisierungen validiert und eingeführt werden.
 
-# Funktionsweise
+#### Funktionsweise
 Bei der Continuous Integration führen Entwickler regelmäßig einen Commit in einem gemeinsam genutzten Repository durch. Dafür wird ein Versionskontrollsystem wie Git verwendet. Vor jeder Durchführung eines Commit können Entwickler lokale Einheitstests für ihren Code durchführen. Sie erhalten dadurch eine zusätzliche Überprüfungsebene vor der Integration. Ein Continuous Integration-Dienst erstellt automatisch Einheitentests für neue Codeänderungen und führt diese aus, um ggf. vorhandene Fehler sofort aufzudecken.
 
-# Vorteil
+#### Vorteil
 In der Vergangenheit haben die Entwickler eines Teams meist isoliert an ihren Aufgaben gearbeitet und ihre Änderungen erst dann an der Hauptverzweigung zusammengeführt, wenn sie abgeschlossen waren. Mit CI werden Änderungen regelmäßig und zeitnah bereitgestellt.
+
+#### Building
+
+#### Testing
+
 
 ### Kontinuierliches Deployment
 
@@ -124,6 +129,9 @@ Gitlab bietet im Gegensatz zu Github eine eigene Implementierung für [Kontinuie
 Diese gliedert sich wie folgt in den Prozess eines Deployments ein:
 
 <img alt="Gitlab CI&CD" src="_assets/img/cicd_pipeline_infograph.png" width="100%" />
+
+- CI Pipeline : Hier werden [automatisierte Tests, UnitTests](README.md#testing) durchgeführt. Falls erforderlich wird vorher ein [Build der Software angefertigt](README.md#build).
+- CD Pipeline : Hier wird ein letztes Review des Codes und der Test (meistens) durch eine Person/ein Team durchgeführt und dann wird der Release der Software automatisch auf die verschiedenen Systeme deployed.
 
 ## Software für manuelles Deployment
 
