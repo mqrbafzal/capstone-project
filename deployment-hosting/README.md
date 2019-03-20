@@ -19,6 +19,14 @@ KVM ?
 #### Dedicated/Rootserver
 
 
+## Server Software
+
+### Betriebsysteme
+
+### Docker
+
+### Kubernetis
+
 
 ## Anbieter
 Generell kann man bei den Anbietern, anhand der Abrechnungsmodelle, in zwei Kategorien unterteilen.
@@ -57,6 +65,24 @@ Eine Preisreduktion bei geringer Nutzung gibt es nicht, man sollte dann einfachh
 
 ##### Europa
 - [Hosteurope](https://hosteurope.de)
+
+# Deployment
+
+## Methoden
+
+### Kontinuierliche Integration
+
+### Manuelles Deployment
+
+## Software für kontinuierliche Integration
+
+### Jenkins
+
+### Travis
+
+### Gitlab
+
+## Software für manuelles deployment
 
 
 ## Autoren
