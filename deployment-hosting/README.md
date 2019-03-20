@@ -66,8 +66,8 @@ Einsatzbereiche:
 
 ## Anbieter
 Generell kann man bei den Anbietern, anhand der Abrechnungsmodelle, in zwei Kategorien unterteilen.
-- Kategorie 1:[Nutzungsbasierte Abrechnung](README.md#Nutzungsbasierte-Abrechnung) Wird immer beliebter wird (obwohl sie nicht immer die bessere/günstigere Variante ist). 
-- Kategorie 2: [Monatliche Abrechnung](README.md#Monatliche-Abrechnung) für vServer/Dedicated Server.
+- Kategorie 1:[Nutzungsbasierte Abrechnung](#Nutzungsbasierte-Abrechnung) Wird immer beliebter wird (obwohl sie nicht immer die bessere/günstigere Variante ist). 
+- Kategorie 2: [Monatliche Abrechnung](#Monatliche-Abrechnung) für vServer/Dedicated Server.
 
 
 ### Nutzungsbasierte Abrechnung
@@ -145,7 +145,7 @@ Mögliche Integration Tests im Bezug zum Reifen wären:
 ### Manuelles Deployment
 Das manuelle Deployment wird von einer oder mehrerer Personen durchgeführt und überwacht. 
 Dabei werden alle Update/Installations Prozesse initial von einer Person angestoßen. 
-Eine Deployment Routine kann vorgegeben sein, jedoch ist diese nicht automatisiert (wie beim [Kontinuierlichen Deployment](README.md#Kontinuierliches-Deployment)).
+Eine Deployment Routine kann vorgegeben sein, jedoch ist diese nicht automatisiert (wie beim [Kontinuierlichen Deployment](#Kontinuierliches-Deployment)).
 
 
 
@@ -162,12 +162,12 @@ Travis gibt es seit 2013 und hat rund 700.000 Anwender, darunter IBM, Zendesk, H
 Als Programmiersprachen werden nahezu alle wichtigen Programmiersprachen unterstützt, darunter C, C++, C#, Clojure, D, Dart, Elixir, Erlang, F#, Go, Groovy, Haskell, Java, JavaScript, Julia, Objective-C, Perl, PHP, Python, R, Ruby, Rust, Scala, Smalltalk, Swift und Visual Basic. 
 
 ### Gitlab
-Gitlab bietet im Gegensatz zu Github eine eigene Implementierung für [Kontinuierliche Integration](README.md#Kontinuierliche-Integration) und [Kontinuierliches Deployment](README.md#Kontinuierliches-Deployment).
+Gitlab bietet im Gegensatz zu Github eine eigene Implementierung für [Kontinuierliche Integration](#Kontinuierliche-Integration) und [Kontinuierliches Deployment](#Kontinuierliches-Deployment).
 Diese gliedert sich wie folgt in den Prozess eines Deployments ein:
 
 <img alt="Gitlab CI&CD" src="_assets/img/cicd_pipeline_infograph.png" width="100%" />
 
-- CI Pipeline : Hier werden [automatisierte Tests, UnitTests](README.md#testing) durchgeführt. Falls erforderlich wird vorher ein [Build der Software angefertigt](README.md#build).
+- CI Pipeline : Hier werden [automatisierte Tests, UnitTests](#testing) durchgeführt. Falls erforderlich wird vorher ein [Build der Software angefertigt](#build).
 - CD Pipeline : Hier wird ein letztes Review des Codes und der Test (meistens) durch eine Person/ein Team durchgeführt und dann wird der Release der Software automatisch auf die verschiedenen Systeme deployed.
 
 ## Software für manuelles Deployment
