@@ -123,7 +123,7 @@ Eine Deployment Routine kann vorgegeben sein, jedoch ist diese nicht automatisie
 Gitlab bietet im Gegensatz zu Github eine eigene Implementierung für [Kontinuierliche Integration](README.md#Kontinuierliche-Integration) und [Kontinuierliches Deployment](README.md#Kontinuierliches-Deployment).
 Diese gliedert sich wie folgt in den Prozess eines Deployments ein:
 
-<img alt="Gitlab CI&CD" src="_assets/img/cicd_pipeline_infograph.png" width="600" />
+<img alt="Gitlab CI&CD" src="_assets/img/cicd_pipeline_infograph.png" width="100%" />
 
 ## Software für manuelles Deployment
 
