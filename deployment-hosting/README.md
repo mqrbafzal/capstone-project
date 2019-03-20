@@ -32,7 +32,12 @@ Virtualisierungstechniken: Im Wesentlichen gibt es drei Methoden, welche von den
 
 ## Server Software
 
-### Betriebsysteme
+### Betriebssysteme
+Betriebssysteme bieten die Grundlage eines jeden Computers/Servers.
+Im Hosting Bereich werden hauptsächlich kostenlose Linuxbasierende Systeme, wie Debian, Ubuntu, CentOS eingesetzt.
+Für Hosting von Microsoft Produkten (Exchange,SharePoint,...) können fast ausschließlich Server mit dem Betriebsystem Microsoft Server eingesetzt werden.
+Dafür werden einmalige oder jährliche Linzenzgebühren fällig.
+
 
 ### Docker
 Definition: Docker ist eine Softwareplattform zur Erstellung, zum Testen und zur Bereitstellung von Anwendungen. Hierbei verpackt Docker Software in standardisierte Einheiten, die als Container bezeichnet werden und alles enthalten, was zum Ausführen der Software erforderlich ist (Bibliotheken, Systemtools, Code und Laufzeit.)
@@ -134,7 +139,7 @@ Eine Deployment Routine kann vorgegeben sein, jedoch ist diese nicht automatisie
 Gitlab bietet im Gegensatz zu Github eine eigene Implementierung für [Kontinuierliche Integration](README.md#Kontinuierliche-Integration) und [Kontinuierliches Deployment](README.md#Kontinuierliches-Deployment).
 Diese gliedert sich wie folgt in den Prozess eines Deployments ein:
 
-<img alt="Gitlab CI&CD" src="_assets/img/cicd_pipeline_infograph.png" width="150" />
+<img alt="Gitlab CI&CD" src="_assets/img/cicd_pipeline_infograph.png" width="100%" />
 
 - CI Pipeline : Hier werden [automatisierte Tests, UnitTests](README.md#testing) durchgeführt. Falls erforderlich wird vorher ein [Build der Software angefertigt](README.md#build).
 - CD Pipeline : Hier wird ein letztes Review des Codes und der Test (meistens) durch eine Person/ein Team durchgeführt und dann wird der Release der Software automatisch auf die verschiedenen Systeme deployed.
