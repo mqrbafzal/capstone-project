@@ -12,8 +12,19 @@
 ### Server
 Ein Server ist ein Computer, welcher meistens zusammen mit mehreren anderen Servern in einem Rechenzentrum steht.
 
-#### vServer
-KVM ?
+#### vServer (virtuelle Server)
+Aus der Sicht des Hardware-Systems sind vServer meistens nur reine Dateiverzeichnisse. Auf diesem Server wird nun eine Software installiert, die eine Virtualisierungsschicht zur Verfügung stellt. In dieser Applikation werden dann virtuelle Rechnersysteme wiederum installiert.
+
+Warum vServer?
+Webseiten-Betreiber brauchen Flexibilität und umfangreiche Rechte. Da ist ein eigenes Serversystem nur für den eigenen Bedarf genau das Richtige. Vor wenigen Jahren noch konnte man dies nur mit der Anmietung eines Hardware-Systems realisieren. Virtuelle Server sind dafür die billigere Variante.
+
+Virtualisierungstechniken: Im Wesentlichen gibt es drei Methoden, welche von den Virtualsierungsapplikationen genutzt werden.
+  - Xen: ist ein Hypervisor, also eine Software, die den Betrieb mehrerer virtueller Maschinen auf einem physischen Computer erlaubt.
+
+  - KVM (kernel-based virtual machine): 
+ 
+  - Virtuozzo(Containervisualiasierung):
+
 
 
 #### Dedicated/Rootserver
@@ -21,12 +32,7 @@ KVM ?
 
 ## Server Software
 
-### Betriebssysteme
-Betriebssysteme bieten die Grundlage eines jeden Computers/Servers.
-Im Hosting Bereich werden hauptsächlich kostenlose Linuxbasierende Systeme, wie Debian, Ubuntu, CentOS eingesetzt.
-Für Hosting von Microsoft Produkten (Exchange,SharePoint,...) können fast ausschließlich Server mit dem Betriebsystem Microsoft Server eingesetzt werden.
-Dafür werden einmalige oder jährliche Linzenzgebühren fällig.
-
+### Betriebsysteme
 
 ### Docker
 Definition: Docker ist eine Softwareplattform zur Erstellung, zum Testen und zur Bereitstellung von Anwendungen. Hierbei verpackt Docker Software in standardisierte Einheiten, die als Container bezeichnet werden und alles enthalten, was zum Ausführen der Software erforderlich ist (Bibliotheken, Systemtools, Code und Laufzeit.)
@@ -128,7 +134,7 @@ Eine Deployment Routine kann vorgegeben sein, jedoch ist diese nicht automatisie
 Gitlab bietet im Gegensatz zu Github eine eigene Implementierung für [Kontinuierliche Integration](README.md#Kontinuierliche-Integration) und [Kontinuierliches Deployment](README.md#Kontinuierliches-Deployment).
 Diese gliedert sich wie folgt in den Prozess eines Deployments ein:
 
-<img alt="Gitlab CI&CD" src="_assets/img/cicd_pipeline_infograph.png" width="100%" />
+<img alt="Gitlab CI&CD" src="_assets/img/cicd_pipeline_infograph.png" width="150" />
 
 - CI Pipeline : Hier werden [automatisierte Tests, UnitTests](README.md#testing) durchgeführt. Falls erforderlich wird vorher ein [Build der Software angefertigt](README.md#build).
 - CD Pipeline : Hier wird ein letztes Review des Codes und der Test (meistens) durch eine Person/ein Team durchgeführt und dann wird der Release der Software automatisch auf die verschiedenen Systeme deployed.
