@@ -189,4 +189,4 @@ Populäres FTP Programm, welches über eine GUI dem Benutzer die Möglichkeit bi
 |      Name       |               E-Mail               |  Änderungsdatum  |
 |:----------------|:-----------------------------------|:-----------------|
 | Philipp Bischof | philipp.bischof@smail.uni-koeln.de |    20.03.2019    |
-|                 |                                    |                  |
+| Edriss Mosafer  | mmosafe1@smail.uni-koeln.de        |    20.03.201     |
