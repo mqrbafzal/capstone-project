@@ -20,13 +20,11 @@ Webseiten-Betreiber brauchen Flexibilität und umfangreiche Rechte. Da ist ein e
 Ein vServer empfiehlt sich dann, wenn Kunden mit Ihrem Webspace bei Webhosting-Anbietern nicht mehr auskommen oder die Anzahl an Usern ihrer Website zu groß wird und entsprechend mehr Ressourcen benötigt. Des Weiteren kann man vServer auch als ersten Einstieg für eine größere Zahl von Websites oder als kleinen Mailserver nutzen.
 
 Virtualisierungstechniken: Im Wesentlichen gibt es drei Methoden, welche von den Virtualsierungsapplikationen genutzt werden.
-  - Xen: ist ein Hypervisor, also eine Software, die den Betrieb mehrerer virtueller Maschinen auf einem physischen Computer erlaubt.
+  - Xen: ist ein Hypervisor, also eine Software, die den Betrieb mehrerer virtueller Maschinen auf einem physischen Computer erlaubt.            Xen läuft auf fast jeder aktuellen Hardware, auch ohne Virtualisierungsfeatures. Die Zukunftssicherheit ist allerdings aufgrund          der Bindung an älteren Linux-Kernel fraglich.
 
-  - KVM (kernel-based virtual machine): 
+  - KVM (kernel-based virtual machine): konvertiert Linux in einen Typ-1-Hypervisor (Bare-Metal). Alle Hypervisors benötigen die                                                 gleichen Komponenten auf Betriebssystemebene – wie zum Beispiel einen Speichermanager,                                                   Prozessplaner, Input/Output-Stack (I/O), Gerätetreiber, Sicherheitsmanager, Netzwerk-Stack und                                           mehr – um VM laufen lassen zu können. KVM verfügt über alle diese Komponenten, weil sie in den                                           Linux-Kernels integriert ist. Auf Seiten der Hardware setzt  es Intel VT / -V voraus. Es läuft                                           mit und in jew. aktuellem Standard-Linux-Kernel und besitzt daher eine hohe Zukunftssicherheit.
  
-  - Virtuozzo(Containervisualiasierung):
-
-
+  - Virtuozzo(Containervisualiasierung): stellt keine Emulation von Hardware oder Abstraktionsschichten zum Ansprechen dieser bereit.                                            Stattdessen werden innerhalb eines laufenden Systems eigene, komplette Laufzeitumgebungen zur                                            Verfügung gestellt, die jedoch von einem gemeinsamen Kernel verwaltet werden. In der Verwendung                                          eines einzelnen Kerns liegt auch der entscheidende Nachteil dieses Lösungsansatzes: rst einmal                                          kann ein einzelner User durch die Ausnutzung von Sicherheitslücken innerhalb des                                                        Virtualisierungsprogramms gelingen, aus der eigenen Umgebung (Jail) auszubrechen. Zum anderen                                            kann auch der Kernel kompromittiert werden. Bei einer fehlerhaften Konfiguration ist es zudem                                            einem Nutzer möglich, sämtliche Ressourcen für eigene Prozesse zu nutzen. Bricht dann unter der                                          Last der Host zusammen, stürzen auch alle anderen VPS mit ab.Die Konfiguration ist wesentlich                                            einfacher als bei anderen Virtualisierungsansätzen, zudem wird durch die direkte Verwaltung der                                          Hardware eine wesentlich höhere Performance erzielt. Deshalb wird diese Technik zum Erstellen                                            virtueller Server besonders beim Webhosting gerne bevorzugt.
 
 #### Dedicated- und Root-Server: Root-Server und Dedicated-Server sind bis auf die Hardware das selbe
 Dedicated Server: 
@@ -66,8 +64,8 @@ Einsatzbereiche:
 
 ## Anbieter
 Generell kann man bei den Anbietern, anhand der Abrechnungsmodelle, in zwei Kategorien unterteilen.
-- Kategorie 1:[Nutzungsbasierte Abrechnung](#Nutzungsbasierte-Abrechnung) Wird immer beliebter wird (obwohl sie nicht immer die bessere/günstigere Variante ist). 
-- Kategorie 2: [Monatliche Abrechnung](#Monatliche-Abrechnung) für vServer/Dedicated Server.
+- Kategorie 1:[Nutzungsbasierte Abrechnung](README.md#Nutzungsbasierte-Abrechnung) Wird immer beliebter wird (obwohl sie nicht immer die bessere/günstigere Variante ist). 
+- Kategorie 2: [Monatliche Abrechnung](README.md#Monatliche-Abrechnung) für vServer/Dedicated Server.
 
 
 ### Nutzungsbasierte Abrechnung
@@ -107,45 +105,21 @@ Eine Preisreduktion bei geringer Nutzung gibt es nicht, man sollte dann einfachh
 ## Methoden
 
 ### Kontinuierliche Integration
-#### Erläuterung
+# Erläuterung
 Continuous Integration ist ein Verfahren, bei der Entwickler alle Codeänderungen regelmäßig in einem zentralen Repository zusammenführen. Diese Änderungen werden dann automatisiert erstellt und getestet. Die Hauptziele der Continuous Integration bestehen darin, Bugs schneller zu entdecken und zu beheben, die Software-Qualität zu optimieren und den Zeitraum zu minimieren, in dem neue Software-Aktualisierungen validiert und eingeführt werden.
 
-#### Funktionsweise
+# Funktionsweise
 Bei der Continuous Integration führen Entwickler regelmäßig einen Commit in einem gemeinsam genutzten Repository durch. Dafür wird ein Versionskontrollsystem wie Git verwendet. Vor jeder Durchführung eines Commit können Entwickler lokale Einheitstests für ihren Code durchführen. Sie erhalten dadurch eine zusätzliche Überprüfungsebene vor der Integration. Ein Continuous Integration-Dienst erstellt automatisch Einheitentests für neue Codeänderungen und führt diese aus, um ggf. vorhandene Fehler sofort aufzudecken.
 
-#### Vorteil
+# Vorteil
 In der Vergangenheit haben die Entwickler eines Teams meist isoliert an ihren Aufgaben gearbeitet und ihre Änderungen erst dann an der Hauptverzweigung zusammengeführt, wenn sie abgeschlossen waren. Mit CI werden Änderungen regelmäßig und zeitnah bereitgestellt.
-
-#### Building
-Beim Building handelt es sich um das Compilieren des Codes und das Linken von verwendeten Bibliotheken mit dem fertigen Release. Auch können beim Building zusätzliche Code Dateien mit Hilfe von Code-Generatoren generisch erzeugt werden. 
-
-#### Testing
-Um Fehler in der Software möglichst gering zu halten sollte man ein umfangreiches Testing der Software implementieten.
-Das Testing kann im Fluss der kontinuierlichen Integration automatisch angestoßen werden und benötigt keine weiteren Eingaben eines Benutzers.
-Beim Testen gibt es unterschiedliche Möglichkeiten Test-Cases zu entwerfen. 
-
-##### Unit Tests
-Bei einem Unit Test wird ein einzelnes Modul (Unit) getestet. Beispiel: stellen wir uns einen Reifen eines Autos als Modul vor. 
-Mögliche Unit Tests dazu wären:
-- Stimmt das Profil des Reifens?
-- Stimmt der Luftdruck des Reifens?
-- Wenn ich mehr Luft in den Reifen pumpe befindet sich auch mehr Luftdruck im Reifen?
-
-##### Integration Tests
-Bei einem Integration Test wird meistens eine Userstory modeliert und getestet. 
-Grundsätzlich wird die Zusammenarbeit zwischen unterschiedlichen Modulen der Software getestet.
-Beispiel: stellen wir uns wieder das Auto vor.
-Mögliche Integration Tests im Bezug zum Reifen wären:
-- Fällt der Reifen ab wenn ich mit 100 durch die Kurve fahre?
-- Wenn ich um 15 Grad einlenke kommt der Reifen nicht gegen die Achse.
-
 
 ### Kontinuierliches Deployment
 
 ### Manuelles Deployment
 Das manuelle Deployment wird von einer oder mehrerer Personen durchgeführt und überwacht. 
 Dabei werden alle Update/Installations Prozesse initial von einer Person angestoßen. 
-Eine Deployment Routine kann vorgegeben sein, jedoch ist diese nicht automatisiert (wie beim [Kontinuierlichen Deployment](#Kontinuierliches-Deployment)).
+Eine Deployment Routine kann vorgegeben sein, jedoch ist diese nicht automatisiert (wie beim [Kontinuierlichen Deployment](README.md#Kontinuierliches-Deployment)).
 
 
 
@@ -154,21 +128,13 @@ Eine Deployment Routine kann vorgegeben sein, jedoch ist diese nicht automatisie
 ### Jenkins
 
 ### Travis
-[Travis CI](https://travis-ci.com) ist eine freie und Open-Source-Software für kontinuierliche Integration und Deployment.
-Die Software eignet sich zum Testen und Erstellen von Projekten, die auf GitHub veröffentlicht werden.
-GitHub informiert Travis-CI-Projekte über Änderungen. Travis CI überprüft darauf den entsprechenden Ast und führt die Anweisungen aus der Konfigurationsdatei aus (z. B. Software aktualisieren, testen, Bericht erstellen oder E-Mail versenden).
 
-Travis gibt es seit 2013 und hat rund 700.000 Anwender, darunter IBM, Zendesk, Heroku, Twitter und Facebook.
-Als Programmiersprachen werden nahezu alle wichtigen Programmiersprachen unterstützt, darunter C, C++, C#, Clojure, D, Dart, Elixir, Erlang, F#, Go, Groovy, Haskell, Java, JavaScript, Julia, Objective-C, Perl, PHP, Python, R, Ruby, Rust, Scala, Smalltalk, Swift und Visual Basic. 
 
 ### Gitlab
-Gitlab bietet im Gegensatz zu Github eine eigene Implementierung für [Kontinuierliche Integration](#Kontinuierliche-Integration) und [Kontinuierliches Deployment](#Kontinuierliches-Deployment).
+Gitlab bietet im Gegensatz zu Github eine eigene Implementierung für [Kontinuierliche Integration](README.md#Kontinuierliche-Integration) und [Kontinuierliches Deployment](README.md#Kontinuierliches-Deployment).
 Diese gliedert sich wie folgt in den Prozess eines Deployments ein:
 
-<img alt="Gitlab CI&CD" src="_assets/img/cicd_pipeline_infograph.png" width="100%" />
-
-- CI Pipeline : Hier werden [automatisierte Tests, UnitTests](#testing) durchgeführt. Falls erforderlich wird vorher ein [Build der Software angefertigt](#build).
-- CD Pipeline : Hier wird ein letztes Review des Codes und der Test (meistens) durch eine Person/ein Team durchgeführt und dann wird der Release der Software automatisch auf die verschiedenen Systeme deployed.
+<img alt="Gitlab CI&CD" src="_assets/img/cicd_pipeline_infograph.png" width="150" />
 
 ## Software für manuelles Deployment
 
@@ -181,7 +147,6 @@ Dabei werden nur die geänderten/hinzugefügten Bytes einer Datei neu übertrage
 ### Filezilla
 Populäres FTP Programm, welches über eine GUI dem Benutzer die Möglichkeit bietet Dateien per Drag&Drop von einem Quellverzeichnis 
 (meistens lokal) in ein Zielverzeichnis (meistens auf dem Zielserver) zu kopieren. Als Grundlegende Übertragungsmethode kann hier FTP, FTPS und SFTP (FTP via Shell) verwendet werden. 
-
 
 
 ## Autoren
