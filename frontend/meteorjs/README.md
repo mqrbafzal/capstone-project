@@ -1,6 +1,6 @@
 <h1 align="center">
   <p>
-    <img alt="Meteor" src="assets/img/meteor.png" width="250" />
+    <img alt="Meteor" src="assets/img/meteor.png" width="400" />
   </p>
   Meteor JS </br>
 </h1>
@@ -31,6 +31,8 @@ Meteor reduziert Front- , Back-End und Datenbank Programmiersprache auch durch d
 Der Umstieg von der herkömmlichen Entwicklung auf die Full-Stack-Entwicklung ist gegebenenfalls problematisch. Auf der einen Seite muss jetzt nur noch eine Programmiersprache gelernt werden, jedoch müssen vormals reine Front-End-Enwickler sich nun Gedanken über die Logik einer Applikation machen, während sich vormals reine Back-End-Entwickler nun mit der Usability befassen müssen. Eine Trennung zwischen Backend- und Frontend-Entwickler ist natürlich weiterhin möglich; jedoch zeigen sich in der Praxis große Effizienzgewinne, wenn der Backend-Entwickler auch mal eine Kleinigkeit im Frontend anpassen kann oder umgekehrt. Full-Stack-Frameworks sind auch nicht für alle Arten von Applikationen einsetzbar oder man läuft Gefahr für spezielle Bedürfnisse nicht das bestmögliche Mittel zu verwenden. Würde man sich von einer Voll-Stack-Lösung distanzieren wollen und gewisse Bereiche mit anderen Sprachen oder Methoden ersetzen wollen, ist das in einem solchen Systemen manchmal etwas aufwändiger – oder zumindest ungewohnt.
 
 ## Tutorials
+
+https://themeteorchef.com/
 
 ## Code Snippets
 
