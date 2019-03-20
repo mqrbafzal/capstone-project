@@ -22,8 +22,8 @@ KVM ?
 
 ## Anbieter
 Generell kann man bei den Anbietern, anhand der Abrechnungsmodelle, in zwei Kategorien unterteilen.
-- Kategorie 1:[Nutzungsbasierte Abrechnung](README.md#Nutzungsbasierte Abrechnung) Wird immer beliebter wird (obwohl sie nicht immer die bessere/günstigere Variante ist). 
-- Kategorie 2: [Monatliche Abrechnung](README.md#Monatliche Abrechnung) für vServer/Dedicated Server.
+- Kategorie 1:[Nutzungsbasierte Abrechnung](deployment-hosting/README.md#Nutzungsbasierte Abrechnung) Wird immer beliebter wird (obwohl sie nicht immer die bessere/günstigere Variante ist). 
+- Kategorie 2: [Monatliche Abrechnung](deployment-hosting/README.md#Monatliche Abrechnung) für vServer/Dedicated Server.
 
 
 ### Nutzungsbasierte Abrechnung
