@@ -1,10 +1,29 @@
 # Deployment & Hosting
 
+
+
+
 # Hosting
+
+## Grundlagen
+
+### Rechenzentrum
+
+### Server
+Ein Server ist ein Computer, welcher meistens zusammen mit mehreren anderen Servern in einem Rechenzentrum steht.
+
+#### vServer
+KVM ?
+
+
+#### Dedicated/Rootserver
+
+
+
 ## Anbieter
 Generell kann man bei den Anbietern, anhand der Abrechnungsmodelle, in zwei Kategorien unterteilen.
-- Kategorie 1:[Nutzungsbasierte Abrechnung](#Nutzungsbasierte Abrechnung) Wird immer beliebter wird (obwohl sie nicht immer die bessere/günstigere Variante ist). 
-- Kategorie 2: [Monatliche Abrechnung](#Monatliche Abrechnung) für vServer/Dedicated Server.
+- Kategorie 1:[Nutzungsbasierte Abrechnung](README.md#Nutzungsbasierte Abrechnung) Wird immer beliebter wird (obwohl sie nicht immer die bessere/günstigere Variante ist). 
+- Kategorie 2: [Monatliche Abrechnung](README.md#Monatliche Abrechnung) für vServer/Dedicated Server.
 
 
 ### Nutzungsbasierte Abrechnung
