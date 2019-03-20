@@ -162,6 +162,7 @@ Populäres FTP Programm, welches über eine GUI dem Benutzer die Möglichkeit bi
 (meistens lokal) in ein Zielverzeichnis (meistens auf dem Zielserver) zu kopieren. Als Grundlegende Übertragungsmethode kann hier FTP, FTPS und SFTP (FTP via Shell) verwendet werden. 
 
 
+
 ## Autoren
 
 |      Name       |               E-Mail               |  Änderungsdatum  |
