@@ -72,17 +72,38 @@ Eine Preisreduktion bei geringer Nutzung gibt es nicht, man sollte dann einfachh
 
 ### Kontinuierliche Integration
 
-### Manuelles Deployment
+### Kontinuierliches Deployment
 
-## Software für kontinuierliche Integration
+### Manuelles Deployment
+Das manuelle Deployment wird von einer oder mehrerer Personen durchgeführt und überwacht. 
+Dabei werden alle Update/Installations Prozesse initial von einer Person angestoßen. 
+Eine Deployment Routine kann vorgegeben sein, jedoch ist diese nicht automatisiert (wie beim [Kontinuierlichen Deployment](README.md#Kontinuierliches-Deployment)).
+
+
+
+## Software für kontinuierliche Integration/kontinuierliches Deployment
 
 ### Jenkins
 
 ### Travis
 
 ### Gitlab
+Gitlab bietet im Gegensatz zu Github eine eigene Implementierung für [Kontinuierliche Integration](README.md#Kontinuierliche-Integration) und [Kontinuierliches Deployment](README.md#Kontinuierliches-Deployment).
+Diese gliedert sich wie folgt in den Prozess eines Deployments ein:
 
-## Software für manuelles deployment
+<img alt="Gitlab CI&CD" src="_assets/img/cicd_pipeline_infograph.png" width="150" />
+
+## Software für manuelles Deployment
+
+### Rsync
+Rsync synchronisiert Dateien und Ordner eines Quellverzeichnisses mit einem Zielverzeichnis. 
+Dabei können die Dateien anhand von Merkmalen, wie z.B. die Prüfsumme, zuletzt bearbeitet, Größe, Inhalt verglichen werden.
+Eine Besonderheit an Rsync ist, dass ein Delta-Sync ausgeführt werden kann. 
+Dabei werden nur die geänderten/hinzugefügten Bytes einer Datei neu übertragen, was bei großen Dateien viel Übertragungszeit spart.
+
+### Filezilla
+Populäres FTP Programm, welches über eine GUI dem Benutzer die Möglichkeit bietet Dateien per Drag&Drop von einem Quellverzeichnis 
+(meistens lokal) in ein Zielverzeichnis (meistens auf dem Zielserver) zu kopieren. Als Grundlegende Übertragungsmethode kann hier FTP, FTPS und SFTP (FTP via Shell) verwendet werden. 
 
 
 ## Autoren
