@@ -6,12 +6,12 @@
 </h1>
 
 ## Übrsicht
-- [create an anchor](#Beschreibung)
-- [Basis Software & Tools](basics-tools/README.md)
-- [Front-End Technologien](frontend/README.md)
-- [Back-End Technologien](backend/README.md)
-- [Datenzugriff & -verwaltung](data-management/README.md)
-- [Deployment & Hosting](deployment-hosting/README.md)
+- [Beschreibung](#Beschreibung)
+- [Einsatzgebiet](#Einsatzgebiet)
+- [Vor- und Nachteile](#Vor- und Nachteile)
+- [Tutorials](#Tutorials)
+- [Code Snippets](#Code Snippets)
+- [Quellen / Links](# Quellen / Weitere Links)
 
 ## Beschreibung
 
@@ -29,7 +29,7 @@ Ein kleines Team aus San Francisco entwickelt die auf JavaScript basierende Full
 * Data-on-the-Wire, d.h zwischen Server und Client wird nicht serverseitig berechnetes HTML ausgetauscht, sondern typisierte Daten in Form von JSON (genauer: EJSON). Diese Daten werden auf dem Client mittels eines Template-Frameworks in HTML umgewandelt und dann am Bildschirm angezeigt
 *
 
-Was bedeuted Fullstack Framework?
+**Was bedeuted Fullstack Framework?**
 
 Client-Server WebApps bestehen üblicherweise aus dem Backend, das auf einem Server läuft, und dem Frontend, das auf dem Client-Browser läuft. Im Backend befindet sich meist die Datenbank zur Speicherung der Daten, im Frontend die Anzeigelogik, aber auch zunehmend die Applikationslogik.
 
