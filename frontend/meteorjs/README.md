@@ -1,5 +1,7 @@
 
-<img alt="Meteor" src="assets/img/meteor.png" width="400" align="center"/>
+<p align="center">
+<img alt="Meteor" src="assets/img/meteor.png" width="400"/>
+</p>
 <h1 align="left">
   Framework zur Frontendentwicklung:  Meteor JS </br>
 </h1>
