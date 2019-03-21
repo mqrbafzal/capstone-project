@@ -70,6 +70,6 @@ https://www.methodpark.de/blog/meteor-das-fullstack-javascript-framework/
 
 ## Autoren
 
-| Name         | E-Mail                          | Ã„nderungsdatum |
+| Name         | E-Mail                          | Änderungsdatum |
 |:-------------|:--------------------------------|:---------------|
 | Tim Dreesen | dreesen@wiso.uni-koeln.de | 20.03.2019     |
