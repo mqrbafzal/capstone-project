@@ -11,7 +11,7 @@
 - [Vor- und Nachteile](#Vor--und-Nachteile)
 - [Tutorials](#Tutorials)
 - [CodeSnippets](#Code-Snippets)
-- [Quellen/Links](#Quellen-/-Weitere-Links)
+- [Quellen/Links](#Quellen-und-weitere-Links)
 
 ## Beschreibung
 
@@ -56,7 +56,7 @@ https://themeteorchef.com/
 
 ## Code Snippets
 
-## Quellen / Weitere Links
+## Quellen und weitere Links
 
 https://www.meteor.com/
 
