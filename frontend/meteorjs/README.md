@@ -8,10 +8,10 @@
 ## Übrsicht
 - [Beschreibung](#Beschreibung)
 - [Einsatzgebiet](#Einsatzgebiet)
-- [Vor- und Nachteile](#Vor- und Nachteile)
+- [Vorrteile/Nachteile](#Vor- und Nachteile)
 - [Tutorials](#Tutorials)
-- [Code Snippets](#Code Snippets)
-- [Quellen / Links](# Quellen / Weitere Links)
+- [CodeSnippets](#Code Snippets)
+- [Quellen/Links](# Quellen / Weitere Links)
 
 ## Beschreibung
 
