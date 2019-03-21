@@ -10,7 +10,7 @@
 - [Einsatzgebiet](#Einsatzgebiet)
 - [Vorrteile/Nachteile](#Vor- und Nachteile)
 - [Tutorials](#Tutorials)
-- [CodeSnippets](#Code Snippets)
+- [CodeSnippets](#Code-Snippets)
 - [Quellen/Links](# Quellen / Weitere Links)
 
 ## Beschreibung
@@ -27,7 +27,7 @@ Ein kleines Team aus San Francisco entwickelt die auf JavaScript basierende Full
 * Tools und Infrastruktur für das Building und Deployment
 * Flexibles Frontend, für einfache Projekte kann man als Frontend-Framework das Meteor-eigene Blaze verwenden. Für komplexere Projekte fügt man  mit „einer Kommandozeile“ Unterstützung für Angular.js oder React.js zum eigenen Projekt hinzu
 * Data-on-the-Wire, d.h zwischen Server und Client wird nicht serverseitig berechnetes HTML ausgetauscht, sondern typisierte Daten in Form von JSON (genauer: EJSON). Diese Daten werden auf dem Client mittels eines Template-Frameworks in HTML umgewandelt und dann am Bildschirm angezeigt
-*
+
 
 **Was bedeuted Fullstack Framework?**
 
