@@ -3,6 +3,10 @@
 # Inhaltsverzeichnis
 - [1. Hosting](README.md)
     - **1.1. Grundlagen**
+        - [1.1.1. Rechenzentrum(RZ)](#rechenzentrum-rz)
+        - [1.1.2. Server](#server)
+        - [1.1.3. vServer](#vserver-virtuelle-server)
+        - [1.1.4. Dedicated / Rootserver](#dedicated--und-root-server-root-server-und-dedicated-server-sind-bis-auf-die-hardware-das-selbe)
     - [1.2. Server Software](software.md)
     - [1.3. Anbieter](anbieter.md)
 ## Grundlagen
@@ -50,13 +54,13 @@ Virtualisierungstechniken: Im Wesentlichen gibt es drei Methoden, welche von den
   - Virtuozzo(Containervisualiasierung): stellt keine Emulation von Hardware oder Abstraktionsschichten zum Ansprechen dieser bereit.                                            Stattdessen werden innerhalb eines laufenden Systems eigene, komplette Laufzeitumgebungen zur                                            Verfügung gestellt, die jedoch von einem gemeinsamen Kernel verwaltet werden. In der Verwendung                                          eines einzelnen Kerns liegt auch der entscheidende Nachteil dieses Lösungsansatzes: rst einmal                                          kann ein einzelner User durch die Ausnutzung von Sicherheitslücken innerhalb des                                                        Virtualisierungsprogramms gelingen, aus der eigenen Umgebung (Jail) auszubrechen. Zum anderen                                            kann auch der Kernel kompromittiert werden. Bei einer fehlerhaften Konfiguration ist es zudem                                            einem Nutzer möglich, sämtliche Ressourcen für eigene Prozesse zu nutzen. Bricht dann unter der                                          Last der Host zusammen, stürzen auch alle anderen VPS mit ab.Die Konfiguration ist wesentlich                                            einfacher als bei anderen Virtualisierungsansätzen, zudem wird durch die direkte Verwaltung der                                          Hardware eine wesentlich höhere Performance erzielt. Deshalb wird diese Technik zum Erstellen                                            virtueller Server besonders beim Webhosting gerne bevorzugt.
 
 #### Dedicated- und Root-Server: Root-Server und Dedicated-Server sind bis auf die Hardware das selbe
-Dedicated Server: 
+##### Dedicated Server: 
 Der Begriff Dedicated Server bezeichnet einen Server, der mit seiner gesamten Performance ausschließlich einem einzigen Kunden bzw. Websitebetreiber oder einer bestimmten Aufgabe bzw. einem Service zur Verfügung steht.
 
-Root-Server:
+##### Root-Server:
 Ein Root-Server ist ein Server, der eine grundlegende Funktion bei der Übersetzung eines Domain-Namens in eine IP-Adresse einnimmt. Er beantwortet Client-Anfragen (Requests) in der Root-Zone des Domain Name Systems.
 
-Vergleich zu vServer:
+##### Vergleich zu vServer:
 Der Dedicated Server ist im Gegensatz zum vServer ein physikalischer Computer mitsamt fester IP-Adresse, der seine ganze Rechenleistung, seinen Arbeitsspeicher und die Leitungsanbindung auf nur einen Kunden oder eine Aufgabe konzentrieren kann. Der Root Server empfiehlt sich dann, wenn man viel mehr Ressourcen benötigt als ein vServer bieten kann und auf schnelle Datenzugriffe angewiesen ist. Gerade bei großen Communities oder eine Website mit vielen Datenzugriffen empfiehlt sich der Wechsel vom vServer zum Root Server. Durch die dedizierten Festplatten bei den Root Server kann der schnellere Datenzugriff im Vergleich zum vServer gewährleistet werden.
 
 
