@@ -39,7 +39,7 @@ Ein vServer empfiehlt sich dann, wenn Kunden mit Ihrem Webspace bei Webhosting-A
 
 Virtualisierungstechniken: Im Wesentlichen gibt es drei Methoden, welche von den Virtualsierungsapplikationen genutzt werden.
   - Xen: ist ein Hypervisor, also eine Software, die den Betrieb mehrerer virtueller Maschinen auf einem physischen Computer erlaubt.            Xen läuft auf fast jeder aktuellen Hardware, auch ohne Virtualisierungsfeatures. Die Zukunftssicherheit ist allerdings aufgrund          der Bindung an älteren Linux-Kernel fraglich.
-<img style="max-width: 150px" alt="KVM Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Kvmbanner-logo2_1.png/640px-Kvmbanner-logo2_1.png"/>
+<img style="max-width: 150px" max-width="150px" alt="KVM Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Kvmbanner-logo2_1.png/640px-Kvmbanner-logo2_1.png"/>
 
 > By <a href="//commons.wikimedia.org/w/index.php?title=User:O.T.S.U.&amp;action=edit&amp;redlink=1" class="new" title="User:O.T.S.U. (page does not exist)">O.T.S.U.</a> - <a rel="nofollow" class="external free" href="http://openvirtualizationalliance.org/downloads/kvm-logo_300dpi.png">http://openvirtualizationalliance.org/downloads/kvm-logo_300dpi.png</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=24109871">Link</a>
 
