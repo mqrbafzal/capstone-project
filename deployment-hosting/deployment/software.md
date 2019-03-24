@@ -4,6 +4,14 @@
 - [2. Deployment](README.md)
     - [2.1. Grundlagen](grundlagen.md)
     - **2.2. Server Software**
+        - [2.2.1. Software für kontinuierliche Integration/kontinuierliches Deployment](#software-für-kontinuierliche-integrationkontinuierliches-deployment)
+            - [2.2.1.1. Jenkins](#Jenkins)
+            - [2.2.1.2. Travis](#Travis)
+            - [2.2.1.3. Gitlab](#Gitlab)
+        - [2.2.2. Software für manuelles Deployment](#software-für-manuelles-deployment)
+            - [2.2.2.1. Rsync](#Rsync)
+            - [2.2.2.2. Filezilla](#Filezilla)
+# Server Software
 
 ## Software für kontinuierliche Integration/kontinuierliches Deployment
 
