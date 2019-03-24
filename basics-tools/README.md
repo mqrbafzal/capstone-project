@@ -20,6 +20,10 @@
 - versioning
 - dependency management
 
+#### Links:
+- [NPM Crash Course](https://www.youtube.com/watch?v=jHDhaSSKmB0)
+- [Yarn Crash Course](https://www.youtube.com/watch?v=g9_6KmiBISk)
+
 ## Code Formatter
 
 - enforces code-formatting and/or code quality rules
