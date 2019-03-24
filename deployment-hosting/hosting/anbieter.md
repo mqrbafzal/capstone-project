@@ -5,7 +5,9 @@
     - [1.1. Grundlagen](grundlagen.md)
     - [1.2. Server Software](software.md)
     - **1.3. Anbieter**
-    
+        - [1.3.1. Nutzungsbasierte Abrechnung](#Nutzungsbasierte-Abrechnung)
+        - [1.3.2. Monatliche Abrechnung](#Monatliche-Abrechnung)
+        
 ## Anbieter
 Generell kann man bei den Anbietern, anhand der Abrechnungsmodelle, in zwei Kategorien unterteilen.
 - Kategorie 1:[Nutzungsbasierte Abrechnung](#Nutzungsbasierte-Abrechnung) Wird immer beliebter wird (obwohl sie nicht immer die bessere/günstigere Variante ist). 

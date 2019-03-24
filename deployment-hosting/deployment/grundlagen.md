@@ -1,3 +1,10 @@
+# Deployment
+[<- Zurück zur Übersicht](/deployment-hosting/README.md)
+# Inhaltsverzeichnis
+- [2. Deployment](README.md)
+    - **2.1. Grundlagen**
+    - [2.2. Server Software](software.md)
+
 ### Kontinuierliche Integration
 #### Erläuterung
 Continuous Integration ist ein Verfahren, bei der Entwickler alle Codeänderungen regelmäßig in einem zentralen Repository zusammenführen. Diese Änderungen werden dann automatisiert erstellt und getestet. Die Hauptziele der Continuous Integration bestehen darin, Bugs schneller zu entdecken und zu beheben, die Software-Qualität zu optimieren und den Zeitraum zu minimieren, in dem neue Software-Aktualisierungen validiert und eingeführt werden.

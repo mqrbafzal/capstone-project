@@ -4,11 +4,15 @@
 - [1. Hosting](README.md)
     - [1.1. Grundlagen](grundlagen.md)
     - **1.2. Server Software**
+        - [1.2.1. Betriebssysteme](#betriebssysteme)
+        - [1.2.2. LAMP](#LAMP)
+        - [1.2.3. Docker](#Docker)
+        - [1.2.4. Kubernetis](#Kubernetis)
     - [1.3. Anbieter](anbieter.md)
 
 ## Software
 
-### Betriebsysteme
+### Betriebssysteme
 Betriebssysteme bieten die Grundlage eines jeden Computers/Servers.
 Im Hosting Bereich werden hauptsächlich kostenlose Linuxbasierende Systeme, wie Debian, Ubuntu, CentOS eingesetzt.
 Für Hosting von Microsoft Produkten (Exchange,SharePoint,...) können fast ausschließlich Server mit dem Betriebsystem Windows Server eingesetzt werden.

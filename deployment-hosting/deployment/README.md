@@ -1,5 +1,5 @@
 # Deployment
-[<- Zurück zur Übersicht](README.md)
+[<- Zurück zur Übersicht](/deployment-hosting/README.md)
 # Inhaltsverzeichnis
 - **2. Deployment**
     - [2.1. Grundlagen](grundlagen.md)
