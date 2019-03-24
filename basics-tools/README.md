@@ -1,8 +1,7 @@
 # Basis Software & Tools
 
-### IDE
+### IDE - Integrated Development Environment
 
-#Integrated Development Environment
 
 If you want to start programming, you usually think in different functions which must be realised with various tools.
 IDE joins togehter the tools needed for producing software products, by offering many functions and tools, as well as an user friendly environment for the programmer.
@@ -42,11 +41,11 @@ In the following, three different open-source IDEs will be presented.
 - uses regular words and sentences in the code to make coding even easier for beginners
 - made for applications and websites
 
-- [Download Link](www.livecode.org)
+- [LiveCode Download Link](www.livecode.org)
 - [Create your first app within minutes](https://www.youtube.com/watch?v=ii-v8uj4Tyg)
 
-
-[Various Useful Tutorials for Students of University of Cologne](https://rrzk.uni-koeln.de/elearning-kurse.html)
+#Various Useful Tutorials for Students of University of Cologne
+[E-Learning](https://rrzk.uni-koeln.de/elearning-kurse.html)
 
 ## Autoren
 
