@@ -1,6 +1,11 @@
 # Deployment & Hosting
 
-
+# Inhaltsverzeichnis
+- [1. Hosting](hosting/README.md)
+    - [1.1. Grundlagen](hosting/grundlagen.md)
+    - [1.2. Server Software](hosting/software.md)
+    - [1.3. Anbieter](hosting/anbieter.md)
+- [2. Deployment](deployment/README.md)
 
 
 # Hosting
@@ -103,7 +108,7 @@ Eine Preisreduktion bei geringer Nutzung gibt es nicht, man sollte dann einfachh
 
 # Deployment
 
-## Methoden
+## Grundlagen
 
 ### Kontinuierliche Integration
 #### Erläuterung
@@ -115,22 +120,22 @@ Bei der Continuous Integration führen Entwickler regelmäßig einen Commit in e
 #### Vorteil
 In der Vergangenheit haben die Entwickler eines Teams meist isoliert an ihren Aufgaben gearbeitet und ihre Änderungen erst dann an der Hauptverzweigung zusammengeführt, wenn sie abgeschlossen waren. Mit CI werden Änderungen regelmäßig und zeitnah bereitgestellt.
 
-#### Building
+### Building
 Beim Building handelt es sich um das Compilieren des Codes und das Linken von verwendeten Bibliotheken mit dem fertigen Release. Auch können beim Building zusätzliche Code Dateien mit Hilfe von Code-Generatoren generisch erzeugt werden. 
 
-#### Testing
+### Testing
 Um Fehler in der Software möglichst gering zu halten sollte man ein umfangreiches Testing der Software implementieten.
 Das Testing kann im Fluss der kontinuierlichen Integration automatisch angestoßen werden und benötigt keine weiteren Eingaben eines Benutzers.
 Beim Testen gibt es unterschiedliche Möglichkeiten Test-Cases zu entwerfen. 
 
-##### Unit Tests
+#### Unit Tests
 Bei einem Unit Test wird ein einzelnes Modul (Unit) getestet. Beispiel: stellen wir uns einen Reifen eines Autos als Modul vor. 
 Mögliche Unit Tests dazu wären:
 - Stimmt das Profil des Reifens?
 - Stimmt der Luftdruck des Reifens?
 - Wenn ich mehr Luft in den Reifen pumpe befindet sich auch mehr Luftdruck im Reifen?
 
-##### Integration Tests
+#### Integration Tests
 Bei einem Integration Test wird meistens eine Userstory modeliert und getestet. 
 Grundsätzlich wird die Zusammenarbeit zwischen unterschiedlichen Modulen der Software getestet.
 Beispiel: stellen wir uns wieder das Auto vor.
