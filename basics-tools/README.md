@@ -144,6 +144,22 @@ In the following, three different open-source IDEs will be presented.
 - developers can create their own rules
 - supports: Java Script
 
+### [Slack](https://slack.com/intl/de-de/)
+
+-Searchable Log of All Conversation and Knowledge
+-communication tool
+-integration of other tools possible 
+-efficient search function
+-different channels with different matters
+
+### [Trello](https://trello.com/de)
+
+-plan and organize a project
+-easy to use
+-connectable with slack
+-progress is ascertainable
+
+
 ## Autoren
 
 | Name | E-Mail | Änderungsdatum |
@@ -151,4 +167,5 @@ In the following, three different open-source IDEs will be presented.
 |Steffen Weisshaar      |steffenweisshaar@yahoo.de        |24.03.2019                |
 |    Mehmet Tokmak  |      mehmet-tokmak@hotmail.de  |          24.03.2019      |
 |  Nino Weber        |    -                                 |       24.03.2019         |
+|  Muqarab Afzal       |  -  muqarabafzal@yahoo.com          |       26.03.2019         |
 |Laurenz Blumentritt |laurenz.blumentritt9@gmail.com        |24.03.2019                |
